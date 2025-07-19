@@ -59,7 +59,7 @@ app.get(
 	async (request: Request, response: Response) => {
 		const courses = await knex("courses")
 			.select(
-        "courses.id AS course_id",
+				"courses.id AS course_id",
 				"course_modules.id AS module_id",
 				"course_modules.name AS module",
 				"courses.name AS course"
